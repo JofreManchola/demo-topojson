@@ -88,7 +88,7 @@ Finalmente se obtiene en el directorio seleccionado una aplicación web con lo s
 
 ![Abrir tabla de atributos](assets\img\exportD3.png)
 
-Para ver el resultado del export haga clic [aquí](/GeoJSON/)
+Para ver el resultado del export haga clic [aquí](GeoJSON/)
 
 ### Contacto
 
