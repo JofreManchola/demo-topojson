@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## TopoJSON y GeoJSON en d3.js
 
-You can use the [editor on GitHub](https://github.com/JofreManchola/demo-topojson/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+El objetivo de esta demostración es mostrar algunas fuentes de datos geográficos, su descarga en shapefile, la conversión a GeoJSON y TopoJSON y finalmente su uso en una visualización utilizando [d3.js](https://d3js.org/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Características TopoJSON
+Es deseable conocer a fondo el formato GeoJSON y TopoJSON, para mayor detalle puede consultar el sitio oficial de la [OGC](http://www.opengeospatial.org/) o el documento de Antonio Sierra [ http://www.idee.es/resources/presentaciones/JIIDE13/miercoles/5_GeoJSON_y_TopoJSON.pdf ](http://www.idee.es/resources/presentaciones/JIIDE13/miercoles/5_GeoJSON_y_TopoJSON.pdf) que expuso en el evento _IV jornadas Ibéricas de infraestructuras de datos espaciales (2013)_. Para el alcance de esta demostración basta con saber que:
+- El TopoJSON es una extensión del GeoJSON.
+- Su característica principal es la eliminación de arcos redundantes.
+- Por lo anterior logra una disminución del tamaño del archivo en comparación con un GeoJSON.
+- Debido a las características del TopoJSON, hay una inclusión de error en el proceso de simplificación.
 
-### Markdown
+### Requerimientos
+En esta demostración se va a utilizar [QGIS](https://www.qgis.org/) que es un software GIS de escritorio _free and open source_.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JofreManchola/demo-topojson/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Acceso a la explicación completa
+Para acceder a la página haga clic [aquí](https://jofremanchola.github.io/demo-topojson/).
