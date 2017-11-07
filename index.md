@@ -59,30 +59,36 @@ El plugis a instalar es `d3 Map Render` desde [ https://plugins.qgis.org/plugins
 ![Abrir tabla de atributos](assets\img\img1.png)
 ![Abrir tabla de atributos](assets\img\img2.png)
 
-Para completar esta demostración se deben instalar dos plugins en QGIS, la intalación de estos plug
+La descarga es el archivo `d3MapRenderer-0.10.3.zip` que se encuentra debe descomprimir en el directorio de plugins de QGIS, el directorio predeterminado es `C:\Users\<nombre-de-usuario>\.qgis2\python\plugins`.
+![Abrir tabla de atributos](assets\img\d3MapRender.png)
+![Abrir tabla de atributos](assets\img\d3MapRender2.png)
 
-### Markdown
+Una vez instalado, se debe habilitar, así que ahora en QGIS, en el menú `complementos` se abre la ventana de administración, se busca `d3 Map Render` y se habilita.
+![Abrir tabla de atributos](assets\img\qgis_complementos2.png), 
+![Abrir tabla de atributos](assets\img\qgis_complementos3.png),
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### QGIS a d3
+Una vez habilitado el complemento aparece en barra de herramientas para su uso, para utilizarlo solamente clic y a seguir el wizard.
+![Abrir tabla de atributos](assets\img\qgis_d3MapRender2.png),
 
-```markdown
-Syntax highlighted code block
+Dentro de las configuraciones en esta demostración se ha configurado:
+- El título de la visualización
+- El directorio de salida del proyecto en d3.
+- La proyección geográfica (se mantuvo la predeterminada).
+- Se habilitaron las opciones de `zoom`, `paneo`.
+- La ubicación de la leyenda.
+- Los configuraron los campos deseados en el `idenfity`.
 
-# Header 1
-## Header 2
-### Header 3
+![Abrir tabla de atributos](assets\img\qgis_d3MapRender3.png),
+![Abrir tabla de atributos](assets\img\qgis_d3MapRender4.png),
+![Abrir tabla de atributos](assets\img\qgis_d3MapRender5.png),
+![Abrir tabla de atributos](assets\img\qgis_d3MapRender6.png),
 
-- Bulleted
-- List
+Finalmente se obtiene en el directorio seleccionado una aplicación web con lo siguiente:
 
-1. Numbered
-2. List
+![Abrir tabla de atributos](assets\img\exportD3.png)
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
+Para ver el resultado del export haga clic [aquí](/GeoJSON/)
 
 ### Contacto
 
