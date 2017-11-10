@@ -69,6 +69,7 @@ Una vez instalado, se debe habilitar, así que ahora en QGIS, en el menú `compl
 
 ### QGIS a d3
 Una vez habilitado el complemento aparece en barra de herramientas para su uso, para utilizarlo solamente clic y a seguir el wizard.
+
 ![Abrir tabla de atributos](assets\img\qgis_d3MapRender2.png),
 
 Dentro de las configuraciones en esta demostración se ha configurado:
