@@ -79,6 +79,8 @@ Dentro de las configuraciones en esta demostración se ha configurado:
 - La ubicación de la leyenda.
 - Los configuraron los campos deseados en el `idenfity`.
 
+**Nota:** En las opciones de formato de salida únicamente está disponible *GeoJSON*, para exportar a TopoJSON puede utilizar el [TopoJSON 2.0 API Reference](https://github.com/topojson/topojson/blob/master/README.md).
+
 ![Abrir tabla de atributos](assets\img\qgis_d3MapRender3.png),
 ![Abrir tabla de atributos](assets\img\qgis_d3MapRender4.png),
 ![Abrir tabla de atributos](assets\img\qgis_d3MapRender5.png),
@@ -88,7 +90,26 @@ Finalmente se obtiene en el directorio seleccionado una aplicación web con lo s
 
 ![Abrir tabla de atributos](assets\img\exportD3.png)
 
-Para ver el resultado del export haga clic [aquí](GeoJSON/)
+Explorando en el directorio `json` se encuentra un archivo *.json que al explorarlo se evidencia que tiene formato GeoJSON.
+![Abrir tabla de atributos](assets\img\GeoJSON_Final.png)
+
+## Aplicación web
+El resultado del D3 Map Render se encuentra disponible en [esta aplicación web](GeoJSON/).
+
+Finalmente, con el fin de obtener el mismo dato en formato TopoJSON, se sigue el tutorial de [d3 MapRenderer](http://maprenderer.org/d3/) (sugiero que lo sigan para más detalle), en el que básicamente se debe:
+1. Instalar [Node.js](https://nodejs.org).
+2. Instalar el paquete topojson.
+> npm install -g topojson
+3. Instalar el servidor http para Node.js (opcional).
+> npm install -g http-server
+4. Convertir el dato de formato GeoJSON a TopoJSON.
+> geo2topo states=barriosprueba.json > topo_barriosprueba.json
+5. Para mayor información sobre las posibilidades de generación, simplificación y manipulación del TopoJSON se sugiere consultar el [TopoJSON 2.0 API Reference](https://github.com/topojson/topojson/blob/master/README.md).
+
+
+Explorando en archivo generado, se encuentra un archivo *.json que contiene la capa de barrios en formato TopoJSON (sin simplificar).
+![Abrir tabla de atributos](assets\img\TopoJSON_Final.png)
+
 
 ### Contacto
 
